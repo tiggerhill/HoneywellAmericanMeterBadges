@@ -1,3 +1,0 @@
-#HoneywellAmericanMeterBadges
-
-Read me.
