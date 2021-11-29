@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrders));
             this.label1 = new System.Windows.Forms.Label();
             this.txtOrderNumber = new System.Windows.Forms.TextBox();
             this.btnEnterOrderNumber = new System.Windows.Forms.Button();
@@ -1288,7 +1287,6 @@
             this.Controls.Add(this.gbOrderDetails);
             this.Controls.Add(this.gbCustBadge);
             this.Controls.Add(this.gbMfgBadge);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmOrders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "American Meter Orders";

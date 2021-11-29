@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblLogo = new System.Windows.Forms.Label();
             this.btnOrderSerialEntry = new System.Windows.Forms.Button();
             this.btnReviewReporting = new System.Windows.Forms.Button();
@@ -43,7 +42,7 @@
             this.lblLogo.Location = new System.Drawing.Point(53, 26);
             this.lblLogo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(451, 32);
+            this.lblLogo.Size = new System.Drawing.Size(450, 32);
             this.lblLogo.TabIndex = 6;
             this.lblLogo.Text = "Honeywell American Meter Badges";
             this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,7 +102,6 @@
             this.Controls.Add(this.btnReviewReporting);
             this.Controls.Add(this.btnOrderSerialEntry);
             this.Controls.Add(this.lblLogo);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.Text = "American Meter Badges and Serial Numbers";
             this.ResumeLayout(false);

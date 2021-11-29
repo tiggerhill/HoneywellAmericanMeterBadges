@@ -55,33 +55,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReviewReporting));
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.honeywellAmericanMeterBadgesDataSet = new HoneywellAmericanMeterBadges.HoneywellAmericanMeterBadgesDataSet();
             this.ordersTableAdapter = new HoneywellAmericanMeterBadges.HoneywellAmericanMeterBadgesDataSetTableAdapters.OrdersTableAdapter();
             this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dgAllOrders = new System.Windows.Forms.DataGridView();
-            this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.honeywellAmericanMeterBadgesDataSet1 = new HoneywellAmericanMeterBadges.HoneywellAmericanMeterBadgesDataSet1();
-            this.ordersTableAdapter1 = new HoneywellAmericanMeterBadges.HoneywellAmericanMeterBadgesDataSet1TableAdapters.OrdersTableAdapter();
-            this.gbAllOrders = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnInfoByCustNum = new System.Windows.Forms.Button();
-            this.btnInfoBySerialNum = new System.Windows.Forms.Button();
-            this.btnInfoByMfgBadgeNum = new System.Windows.Forms.Button();
-            this.btnInfoByCustBadgeNum = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.txtCustNumber = new System.Windows.Forms.TextBox();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.txtSerialNum = new System.Windows.Forms.TextBox();
-            this.txtMfgBadgeNum = new System.Windows.Forms.TextBox();
-            this.txtCustBadgeNum = new System.Windows.Forms.TextBox();
-            this.lblCustName = new System.Windows.Forms.Label();
-            this.txtOrderNum = new System.Windows.Forms.TextBox();
-            this.btnInfoByOrderNum = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderNotesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,6 +84,27 @@
             this.custQuantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custNotesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.honeywellAmericanMeterBadgesDataSet1 = new HoneywellAmericanMeterBadges.HoneywellAmericanMeterBadgesDataSet1();
+            this.ordersTableAdapter1 = new HoneywellAmericanMeterBadges.HoneywellAmericanMeterBadgesDataSet1TableAdapters.OrdersTableAdapter();
+            this.gbAllOrders = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnInfoByCustNum = new System.Windows.Forms.Button();
+            this.btnInfoBySerialNum = new System.Windows.Forms.Button();
+            this.btnInfoByMfgBadgeNum = new System.Windows.Forms.Button();
+            this.btnInfoByCustBadgeNum = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.txtCustNumber = new System.Windows.Forms.TextBox();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.txtSerialNum = new System.Windows.Forms.TextBox();
+            this.txtMfgBadgeNum = new System.Windows.Forms.TextBox();
+            this.txtCustBadgeNum = new System.Windows.Forms.TextBox();
+            this.lblCustName = new System.Windows.Forms.Label();
+            this.txtOrderNum = new System.Windows.Forms.TextBox();
+            this.btnInfoByOrderNum = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.honeywellAmericanMeterBadgesDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
@@ -184,202 +183,6 @@
             this.dgAllOrders.ReadOnly = true;
             this.dgAllOrders.Size = new System.Drawing.Size(2016, 579);
             this.dgAllOrders.TabIndex = 0;
-            // 
-            // ordersBindingSource2
-            // 
-            this.ordersBindingSource2.DataMember = "Orders";
-            this.ordersBindingSource2.DataSource = this.honeywellAmericanMeterBadgesDataSet1;
-            // 
-            // honeywellAmericanMeterBadgesDataSet1
-            // 
-            this.honeywellAmericanMeterBadgesDataSet1.DataSetName = "HoneywellAmericanMeterBadgesDataSet1";
-            this.honeywellAmericanMeterBadgesDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ordersTableAdapter1
-            // 
-            this.ordersTableAdapter1.ClearBeforeFill = true;
-            // 
-            // gbAllOrders
-            // 
-            this.gbAllOrders.Controls.Add(this.dgAllOrders);
-            this.gbAllOrders.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gbAllOrders.Location = new System.Drawing.Point(0, 257);
-            this.gbAllOrders.Name = "gbAllOrders";
-            this.gbAllOrders.Size = new System.Drawing.Size(2022, 598);
-            this.gbAllOrders.TabIndex = 1;
-            this.gbAllOrders.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(355, 230);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Manufacturing Badge Information";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1209, 234);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(240, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Customer Badge Information";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(47, 230);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "All Orders";
-            // 
-            // btnInfoByCustNum
-            // 
-            this.btnInfoByCustNum.BackColor = System.Drawing.Color.LightCoral;
-            this.btnInfoByCustNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoByCustNum.Location = new System.Drawing.Point(177, 105);
-            this.btnInfoByCustNum.Name = "btnInfoByCustNum";
-            this.btnInfoByCustNum.Size = new System.Drawing.Size(140, 29);
-            this.btnInfoByCustNum.TabIndex = 5;
-            this.btnInfoByCustNum.Text = "Customer #";
-            this.btnInfoByCustNum.UseVisualStyleBackColor = false;
-            this.btnInfoByCustNum.Click += new System.EventHandler(this.BtnInfoByCustNum_Click);
-            // 
-            // btnInfoBySerialNum
-            // 
-            this.btnInfoBySerialNum.BackColor = System.Drawing.Color.LightCoral;
-            this.btnInfoBySerialNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoBySerialNum.Location = new System.Drawing.Point(326, 105);
-            this.btnInfoBySerialNum.Name = "btnInfoBySerialNum";
-            this.btnInfoBySerialNum.Size = new System.Drawing.Size(140, 29);
-            this.btnInfoBySerialNum.TabIndex = 6;
-            this.btnInfoBySerialNum.Text = "Serial #";
-            this.btnInfoBySerialNum.UseVisualStyleBackColor = false;
-            this.btnInfoBySerialNum.Click += new System.EventHandler(this.BtnInfoBySerialNum_Click);
-            // 
-            // btnInfoByMfgBadgeNum
-            // 
-            this.btnInfoByMfgBadgeNum.BackColor = System.Drawing.Color.LightCoral;
-            this.btnInfoByMfgBadgeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoByMfgBadgeNum.Location = new System.Drawing.Point(475, 105);
-            this.btnInfoByMfgBadgeNum.Name = "btnInfoByMfgBadgeNum";
-            this.btnInfoByMfgBadgeNum.Size = new System.Drawing.Size(140, 29);
-            this.btnInfoByMfgBadgeNum.TabIndex = 7;
-            this.btnInfoByMfgBadgeNum.Text = "MFG Badge #\r\n";
-            this.btnInfoByMfgBadgeNum.UseVisualStyleBackColor = false;
-            this.btnInfoByMfgBadgeNum.Click += new System.EventHandler(this.BtnInfoByMfgBadgeNum_Click);
-            // 
-            // btnInfoByCustBadgeNum
-            // 
-            this.btnInfoByCustBadgeNum.BackColor = System.Drawing.Color.LightCoral;
-            this.btnInfoByCustBadgeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoByCustBadgeNum.Location = new System.Drawing.Point(624, 105);
-            this.btnInfoByCustBadgeNum.Name = "btnInfoByCustBadgeNum";
-            this.btnInfoByCustBadgeNum.Size = new System.Drawing.Size(140, 29);
-            this.btnInfoByCustBadgeNum.TabIndex = 8;
-            this.btnInfoByCustBadgeNum.Text = "CUST Badge #";
-            this.btnInfoByCustBadgeNum.UseVisualStyleBackColor = false;
-            this.btnInfoByCustBadgeNum.Click += new System.EventHandler(this.BtnInfoByCustBadgeNum_Click);
-            // 
-            // txtCustNumber
-            // 
-            this.txtCustNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustNumber.Location = new System.Drawing.Point(191, 79);
-            this.txtCustNumber.Name = "txtCustNumber";
-            this.txtCustNumber.Size = new System.Drawing.Size(112, 22);
-            this.txtCustNumber.TabIndex = 12;
-            this.txtCustNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtCustNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCustNumber_KeyDown);
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.LightCoral;
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(818, 105);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(112, 29);
-            this.btnReset.TabIndex = 13;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
-            // 
-            // txtSerialNum
-            // 
-            this.txtSerialNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSerialNum.Location = new System.Drawing.Point(340, 79);
-            this.txtSerialNum.Name = "txtSerialNum";
-            this.txtSerialNum.Size = new System.Drawing.Size(112, 22);
-            this.txtSerialNum.TabIndex = 14;
-            this.txtSerialNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtSerialNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtSerialNum_KeyDown);
-            // 
-            // txtMfgBadgeNum
-            // 
-            this.txtMfgBadgeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMfgBadgeNum.Location = new System.Drawing.Point(489, 79);
-            this.txtMfgBadgeNum.Name = "txtMfgBadgeNum";
-            this.txtMfgBadgeNum.Size = new System.Drawing.Size(112, 22);
-            this.txtMfgBadgeNum.TabIndex = 15;
-            this.txtMfgBadgeNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtMfgBadgeNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtMfgBadgeNum_KeyDown);
-            // 
-            // txtCustBadgeNum
-            // 
-            this.txtCustBadgeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustBadgeNum.Location = new System.Drawing.Point(638, 79);
-            this.txtCustBadgeNum.Name = "txtCustBadgeNum";
-            this.txtCustBadgeNum.Size = new System.Drawing.Size(112, 22);
-            this.txtCustBadgeNum.TabIndex = 16;
-            this.txtCustBadgeNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtCustBadgeNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCustBadgeNum_KeyDown);
-            // 
-            // lblCustName
-            // 
-            this.lblCustName.AutoSize = true;
-            this.lblCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustName.Location = new System.Drawing.Point(174, 147);
-            this.lblCustName.Name = "lblCustName";
-            this.lblCustName.Size = new System.Drawing.Size(38, 17);
-            this.lblCustName.TabIndex = 17;
-            this.lblCustName.Text = "-----";
-            // 
-            // txtOrderNum
-            // 
-            this.txtOrderNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrderNum.Location = new System.Drawing.Point(42, 79);
-            this.txtOrderNum.Name = "txtOrderNum";
-            this.txtOrderNum.Size = new System.Drawing.Size(112, 22);
-            this.txtOrderNum.TabIndex = 19;
-            this.txtOrderNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtOrderNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtOrderNum_KeyDown);
-            // 
-            // btnInfoByOrderNum
-            // 
-            this.btnInfoByOrderNum.BackColor = System.Drawing.Color.LightCoral;
-            this.btnInfoByOrderNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoByOrderNum.Location = new System.Drawing.Point(28, 105);
-            this.btnInfoByOrderNum.Name = "btnInfoByOrderNum";
-            this.btnInfoByOrderNum.Size = new System.Drawing.Size(140, 29);
-            this.btnInfoByOrderNum.TabIndex = 18;
-            this.btnInfoByOrderNum.Text = "Order #";
-            this.btnInfoByOrderNum.UseVisualStyleBackColor = false;
-            this.btnInfoByOrderNum.Click += new System.EventHandler(this.BtnInfoByOrderNum_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 20);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Search by:";
             // 
             // orderNumberDataGridViewTextBoxColumn
             // 
@@ -635,6 +438,202 @@
             this.custNotesDataGridViewTextBoxColumn.ReadOnly = true;
             this.custNotesDataGridViewTextBoxColumn.Width = 155;
             // 
+            // ordersBindingSource2
+            // 
+            this.ordersBindingSource2.DataMember = "Orders";
+            this.ordersBindingSource2.DataSource = this.honeywellAmericanMeterBadgesDataSet1;
+            // 
+            // honeywellAmericanMeterBadgesDataSet1
+            // 
+            this.honeywellAmericanMeterBadgesDataSet1.DataSetName = "HoneywellAmericanMeterBadgesDataSet1";
+            this.honeywellAmericanMeterBadgesDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ordersTableAdapter1
+            // 
+            this.ordersTableAdapter1.ClearBeforeFill = true;
+            // 
+            // gbAllOrders
+            // 
+            this.gbAllOrders.Controls.Add(this.dgAllOrders);
+            this.gbAllOrders.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gbAllOrders.Location = new System.Drawing.Point(0, 257);
+            this.gbAllOrders.Name = "gbAllOrders";
+            this.gbAllOrders.Size = new System.Drawing.Size(2022, 598);
+            this.gbAllOrders.TabIndex = 1;
+            this.gbAllOrders.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(355, 230);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(278, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Manufacturing Badge Information";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1209, 234);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(240, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Customer Badge Information";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(47, 230);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "All Orders";
+            // 
+            // btnInfoByCustNum
+            // 
+            this.btnInfoByCustNum.BackColor = System.Drawing.Color.LightCoral;
+            this.btnInfoByCustNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfoByCustNum.Location = new System.Drawing.Point(177, 105);
+            this.btnInfoByCustNum.Name = "btnInfoByCustNum";
+            this.btnInfoByCustNum.Size = new System.Drawing.Size(140, 29);
+            this.btnInfoByCustNum.TabIndex = 5;
+            this.btnInfoByCustNum.Text = "Customer #";
+            this.btnInfoByCustNum.UseVisualStyleBackColor = false;
+            this.btnInfoByCustNum.Click += new System.EventHandler(this.BtnInfoByCustNum_Click);
+            // 
+            // btnInfoBySerialNum
+            // 
+            this.btnInfoBySerialNum.BackColor = System.Drawing.Color.LightCoral;
+            this.btnInfoBySerialNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfoBySerialNum.Location = new System.Drawing.Point(326, 105);
+            this.btnInfoBySerialNum.Name = "btnInfoBySerialNum";
+            this.btnInfoBySerialNum.Size = new System.Drawing.Size(140, 29);
+            this.btnInfoBySerialNum.TabIndex = 6;
+            this.btnInfoBySerialNum.Text = "Serial #";
+            this.btnInfoBySerialNum.UseVisualStyleBackColor = false;
+            this.btnInfoBySerialNum.Click += new System.EventHandler(this.BtnInfoBySerialNum_Click);
+            // 
+            // btnInfoByMfgBadgeNum
+            // 
+            this.btnInfoByMfgBadgeNum.BackColor = System.Drawing.Color.LightCoral;
+            this.btnInfoByMfgBadgeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfoByMfgBadgeNum.Location = new System.Drawing.Point(475, 105);
+            this.btnInfoByMfgBadgeNum.Name = "btnInfoByMfgBadgeNum";
+            this.btnInfoByMfgBadgeNum.Size = new System.Drawing.Size(140, 29);
+            this.btnInfoByMfgBadgeNum.TabIndex = 7;
+            this.btnInfoByMfgBadgeNum.Text = "MFG Badge #\r\n";
+            this.btnInfoByMfgBadgeNum.UseVisualStyleBackColor = false;
+            this.btnInfoByMfgBadgeNum.Click += new System.EventHandler(this.BtnInfoByMfgBadgeNum_Click);
+            // 
+            // btnInfoByCustBadgeNum
+            // 
+            this.btnInfoByCustBadgeNum.BackColor = System.Drawing.Color.LightCoral;
+            this.btnInfoByCustBadgeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfoByCustBadgeNum.Location = new System.Drawing.Point(624, 105);
+            this.btnInfoByCustBadgeNum.Name = "btnInfoByCustBadgeNum";
+            this.btnInfoByCustBadgeNum.Size = new System.Drawing.Size(140, 29);
+            this.btnInfoByCustBadgeNum.TabIndex = 8;
+            this.btnInfoByCustBadgeNum.Text = "CUST Badge #";
+            this.btnInfoByCustBadgeNum.UseVisualStyleBackColor = false;
+            this.btnInfoByCustBadgeNum.Click += new System.EventHandler(this.BtnInfoByCustBadgeNum_Click);
+            // 
+            // txtCustNumber
+            // 
+            this.txtCustNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustNumber.Location = new System.Drawing.Point(191, 79);
+            this.txtCustNumber.Name = "txtCustNumber";
+            this.txtCustNumber.Size = new System.Drawing.Size(112, 22);
+            this.txtCustNumber.TabIndex = 12;
+            this.txtCustNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCustNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCustNumber_KeyDown);
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.LightCoral;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(818, 105);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(112, 29);
+            this.btnReset.TabIndex = 13;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
+            // 
+            // txtSerialNum
+            // 
+            this.txtSerialNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSerialNum.Location = new System.Drawing.Point(340, 79);
+            this.txtSerialNum.Name = "txtSerialNum";
+            this.txtSerialNum.Size = new System.Drawing.Size(112, 22);
+            this.txtSerialNum.TabIndex = 14;
+            this.txtSerialNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSerialNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtSerialNum_KeyDown);
+            // 
+            // txtMfgBadgeNum
+            // 
+            this.txtMfgBadgeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMfgBadgeNum.Location = new System.Drawing.Point(489, 79);
+            this.txtMfgBadgeNum.Name = "txtMfgBadgeNum";
+            this.txtMfgBadgeNum.Size = new System.Drawing.Size(112, 22);
+            this.txtMfgBadgeNum.TabIndex = 15;
+            this.txtMfgBadgeNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMfgBadgeNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtMfgBadgeNum_KeyDown);
+            // 
+            // txtCustBadgeNum
+            // 
+            this.txtCustBadgeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustBadgeNum.Location = new System.Drawing.Point(638, 79);
+            this.txtCustBadgeNum.Name = "txtCustBadgeNum";
+            this.txtCustBadgeNum.Size = new System.Drawing.Size(112, 22);
+            this.txtCustBadgeNum.TabIndex = 16;
+            this.txtCustBadgeNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCustBadgeNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCustBadgeNum_KeyDown);
+            // 
+            // lblCustName
+            // 
+            this.lblCustName.AutoSize = true;
+            this.lblCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustName.Location = new System.Drawing.Point(174, 147);
+            this.lblCustName.Name = "lblCustName";
+            this.lblCustName.Size = new System.Drawing.Size(38, 17);
+            this.lblCustName.TabIndex = 17;
+            this.lblCustName.Text = "-----";
+            // 
+            // txtOrderNum
+            // 
+            this.txtOrderNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderNum.Location = new System.Drawing.Point(42, 79);
+            this.txtOrderNum.Name = "txtOrderNum";
+            this.txtOrderNum.Size = new System.Drawing.Size(112, 22);
+            this.txtOrderNum.TabIndex = 19;
+            this.txtOrderNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtOrderNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtOrderNum_KeyDown);
+            // 
+            // btnInfoByOrderNum
+            // 
+            this.btnInfoByOrderNum.BackColor = System.Drawing.Color.LightCoral;
+            this.btnInfoByOrderNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfoByOrderNum.Location = new System.Drawing.Point(28, 105);
+            this.btnInfoByOrderNum.Name = "btnInfoByOrderNum";
+            this.btnInfoByOrderNum.Size = new System.Drawing.Size(140, 29);
+            this.btnInfoByOrderNum.TabIndex = 18;
+            this.btnInfoByOrderNum.Text = "Order #";
+            this.btnInfoByOrderNum.UseVisualStyleBackColor = false;
+            this.btnInfoByOrderNum.Click += new System.EventHandler(this.BtnInfoByOrderNum_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(35, 44);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 20);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Search by:";
+            // 
             // frmReviewReporting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -658,7 +657,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gbAllOrders);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmReviewReporting";

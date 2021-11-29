@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSetUpMaintenance));
             this.btnBlankBadges = new System.Windows.Forms.Button();
             this.btnFinishedBadges = new System.Windows.Forms.Button();
             this.btnRequirements = new System.Windows.Forms.Button();
@@ -107,7 +106,6 @@
             this.Controls.Add(this.btnRequirements);
             this.Controls.Add(this.btnStatuses);
             this.Controls.Add(this.btnCustomers);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSetUpMaintenance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Set-Up / Maintenance";

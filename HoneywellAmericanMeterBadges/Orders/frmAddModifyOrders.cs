@@ -46,7 +46,7 @@ namespace HoneywellAmericanMeterBadges.Orders
                 if (addOrder)
                 {
                     order = new Order();
-                    this.PutOrderData(order);
+                    PutOrderData(order);
                     try
                     {
                         OrdersDB.AddNewOrder(order);
